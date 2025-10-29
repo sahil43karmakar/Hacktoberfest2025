@@ -26,9 +26,8 @@ jobs:
                 page: page
               });
               
-              if (prs.data.length === 0) {
+              if (prs.data.length < 100) {
                 hasMore = false;
-                break;
               }
               
               for (const pr of prs.data) {
